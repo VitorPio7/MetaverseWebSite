@@ -7,6 +7,7 @@ export default function Card({
   reference,
   city,
   id,
+  url,
 }) {
   return (
     <div className="containerCard" style={{ backgroudColor: "black" }}>
@@ -24,7 +25,7 @@ export default function Card({
         </div>
         <p className="myMainText">{text}</p>
         <p className="referenceLink">
-          <NavLink to="/myPag1">Click Here to see</NavLink>
+          <NavLink to={url}>Click Here to see</NavLink>
         </p>
       </div>
       {id % 2 !== 0 ? (

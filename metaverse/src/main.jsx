@@ -12,7 +12,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/Pag1",
+    path: "/metaverse",
     element: <Pag1 />,
     errorElement: <ErrorPage />,
   },

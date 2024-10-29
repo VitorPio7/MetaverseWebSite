@@ -14,6 +14,7 @@ export default function Main({ myStily, myData }) {
             text={el.text}
             reference={el.place}
             city={el.place}
+            url={el.url}
           />
         );
       })}

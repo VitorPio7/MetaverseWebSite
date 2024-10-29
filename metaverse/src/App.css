@@ -1,0 +1,160 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Inter";
+}
+/*my header*/
+header {
+  display: grid;
+  grid-template-columns: 5fr 0.5fr;
+  background: linear-gradient(-45deg, #380944, #601473, #77148f, #490c58);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+  align-items: center;
+  justify-items: center;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.ChangeMyButton {
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+.simbol_icon {
+  display: flex;
+  flex-direction: row;
+}
+.simbol_icon h1 {
+  font-family: "Inknut Antiqua";
+  font-weight: 300;
+  color: white;
+  justify-content: center;
+}
+.infinity_icon {
+  margin-top: 1rem;
+}
+/*Cards*/
+
+.locationSymbol {
+  width: 15px;
+}
+.containerCard p {
+  max-width: 400px;
+  text-align: justify;
+}
+.containerCard {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.myImage {
+  border-radius: 5px;
+}
+.myInfo {
+  display: flex;
+}
+.myInfo img {
+  margin-left: 1rem;
+}
+.myInfo p {
+  font-weight: 800;
+}
+.myInfo h3 {
+  font-weight: 800;
+}
+.myMainText {
+  font-weight: 300;
+}
+.lightMode {
+  display: flex;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  height: 100%;
+  gap: 3rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image: linear-gradient(45deg, #f2f2f2 50%, #e5e5f7 50%);
+  background-size: 5px 5px;
+}
+.darkMode {
+  color: white;
+  display: flex;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  height: 100%;
+  gap: 3rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  opacity: 0.9;
+  background-image: linear-gradient(
+    -45deg,
+    #000000,
+    #000000 50%,
+    #20202a 50%,
+    #20202a
+  );
+  background-size: 6px 6px;
+}
+.darkMode a p {
+  color: #6d5bc5;
+}
+
+.contentDiv h1 {
+  margin-bottom: 10px;
+}
+.myInfo {
+  margin-bottom: 5px;
+}
+.myInfo h4 {
+  letter-spacing: 1px;
+}
+
+/*My footer*/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-template-columns: 5fr 0.5fr;
+  background: linear-gradient(-45deg, #380944, #601473, #77148f, #490c58);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+  height: 7rem;
+}
+footer p {
+  color: white;
+  font-size: small;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.containerFooter {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.containerRedes {
+  padding-top: 15px;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  gap: 2rem;
+}
+.contentDiv a {
+  text-decoration: none;
+  letter-spacing: 3px;
+}

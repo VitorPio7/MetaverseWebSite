@@ -1,11 +1,11 @@
-export default function Intro() {
+export default function Intro({ img, title }) {
   return (
     <div className="containerIntro">
-      <a href="">
-        <p> &#128072 Return</p>
-        <h2></h2>
-        <p></p>
+      <a href="/">
+        <p>👈 Return</p>
       </a>
+      <h1>{title}</h1>
+      <img src={img} alt="oi" />
     </div>
   );
 }

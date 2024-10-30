@@ -158,3 +158,59 @@ footer p {
   text-decoration: none;
   letter-spacing: 3px;
 }
+/*dark mode and white mode pag1*/
+
+.lightMode2 {
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  height: 100%;
+  gap: 3rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image: linear-gradient(45deg, #f2f2f2 50%, #e5e5f7 50%);
+  background-size: 5px 5px;
+}
+.darkMode2 {
+  color: white;
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  height: 100%;
+  gap: 3rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  opacity: 0.9;
+  background-image: linear-gradient(
+    -45deg,
+    #000000,
+    #000000 50%,
+    #20202a 50%,
+    #20202a
+  );
+  background-size: 6px 6px;
+}
+.darkMode2 a p {
+  color: #6d5bc5;
+}
+.containerIntro a {
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+.containerIntro h1 {
+  text-align: center;
+}
+.containerElement {
+  display: flex;
+  flex-direction: column;
+}
+.containerElement p {
+  max-width: 855px;
+  text-align: justify;
+  font-weight: 300;
+}

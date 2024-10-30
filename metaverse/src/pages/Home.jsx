@@ -1,25 +1,20 @@
 import "../App.css";
-import Head from "../components/Head";
+import Head from "../components/FirstPage/Head";
 import { useState, useEffect } from "react";
-import Main from "../components/Main";
-import Footer from "../components/Footer";
-import axios from "axios";
+import Main from "../components/FirstPage/Main";
+import Footer from "../components/FirstPage/Footer";
+import myData from "../myData";
 
 function App() {
   let [firstIcon, setIcon] = useState(true);
-  let [myArray, setMyarray] = useState([]);
-
-  const fetchAPI = async () => {
-    const response = await axios.get("http://localhost:8080/api");
-    setMyarray(response.data);
-    console.log(response.data);
-  };
+  let [todos, setTodos] = useState([]);
   useEffect(() => {
-    fetchAPI();
+    setTodos(myData);
   }, []);
   function changeValue() {
     setIcon((prevValue) => !prevValue);
   }
+  console.log("todos head:" + todos);
   return (
     <div className="container">
       <Head
@@ -27,7 +22,7 @@ function App() {
         event={changeValue}
         backgroundChange={firstIcon}
       />
-      <Main myStily={firstIcon} myData={myArray} />
+      <Main myStily={firstIcon} myData={todos} />
       <Footer />
     </div>
   );

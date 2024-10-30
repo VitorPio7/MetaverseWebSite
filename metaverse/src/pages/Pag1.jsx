@@ -1,11 +1,14 @@
-import Head from "../components/Head";
+import Head from "../components/FirstPage/Head";
+import "../App.css";
 import { useState } from "react";
-import Intro from "../components/SecondPage/Intro";
+import MainNews from "../components/SecondPage/MainNews";
+
 export default function Pag1() {
+  let [firstIcon, setIcon] = useState(true);
+
   function changeValue() {
     setIcon((prevValue) => !prevValue);
   }
-  let [firstIcon, setIcon] = useState(true);
   return (
     <>
       <Head
@@ -13,7 +16,7 @@ export default function Pag1() {
         event={changeValue}
         backgroundChange={firstIcon}
       />
-      <Intro />
+      <MainNews myStily={firstIcon} />
     </>
   );
 }

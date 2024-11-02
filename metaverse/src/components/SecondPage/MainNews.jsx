@@ -1,12 +1,15 @@
 import Intro from "./Intro";
-import articleData from "../../articleData";
+
 import Element from "./Element";
-export default function MainNews({ myStily }) {
-  console.log("hello:" + articleData);
+export default function MainNews(props) {
+  console.log("hello:" + props.myArticleData);
   return (
-    <div className={myStily ? "lightMode2" : "darkMode2"}>
-      <Intro title={articleData[0].introText} img={articleData[0].introImg} />
-      {articleData.map((el, index) => {
+    <>
+      <Intro
+        title={props.myArticleData[0].introText}
+        img={props.myArticleData[0].introImg}
+      />
+      {props.myArticleData.map((el, index) => {
         return (
           <Element
             key={index}
@@ -16,6 +19,6 @@ export default function MainNews({ myStily }) {
           />
         );
       })}
-    </div>
+    </>
   );
 }

@@ -2,11 +2,11 @@ export default function Intro({ img, title }) {
   return (
     <div className="containerIntro">
       <a href="/" className="return">
-        <img src="ImgSecondPage/doubleArrow.svg" alt="arrow" />
+        <img src="imgFourPage/arrow.svg" alt="arrow" />
         <p>Return</p>
       </a>
-      <h1>{title}</h1>
-      <img src={img} alt="oi" />
+      <p className="mytitleMagazine">{title}</p>
+      <img className="newsImg" src={img} alt="oi" />
     </div>
   );
 }

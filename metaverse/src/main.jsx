@@ -5,6 +5,7 @@ import Pag1 from "./pages/Pag1";
 import Pag2 from "./pages/Pag2";
 import Pag3 from "./pages/Pag3";
 import Pag4 from "./pages/Pag4";
+import Pag5 from "./pages/Pag5";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./Error-page";
 
@@ -32,6 +33,11 @@ const router = createBrowserRouter([
   {
     path: "/BlockMetaverse",
     element: <Pag4 />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/metaverseMain",
+    element: <Pag5 />,
     errorElement: <ErrorPage />,
   },
 ]);

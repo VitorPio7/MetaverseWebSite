@@ -1,7 +1,7 @@
 export default [
     {
-        introText: "Challenges and limitations of the metaverse",
-        introImg: "imgThirdPage/img.svg",
+        introText: "Obstacles and Constraints of MV",
+        introImg: "imgThirdPage/img.png",
         titleElement: "Network Infrastructure and Underlying Technologies",
         bodyElement: "The metaverse requires advanced infrastructure, with high-capacity networks to support amassive real-time data traffic, especially due to the need for experiments immersive environments with extremely low latency. Technologies such as 5G, computing cloud and edge computing are essential to provide the necessary connectivity. Nod However, these technologies are still in the expansion phase in many regions, limiting the availability and accessibility of the metaverse on a global scale. Furthermore, there are concerns about scalability and high energy consumption, which can impact the sustainability of the services offered within this environment."
 

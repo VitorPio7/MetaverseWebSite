@@ -1,7 +1,7 @@
 export default [
     {
         introText: "The importance of Metaverse",
-        introImg: "ImgSecondPage/img1.svg",
+        introImg: "ImgSecondPage/img1.png",
         titleElement: "Smart Cities and Professions of the Future in the Context of the Metaverse",
         bodyElement: "With the advancement of new digital technologies, such as the metaverse, and the development of smart cities, there is a need to rethink professions and urban environments. The convergence between digital infrastructure, artificial intelligence, the internet of things (IoT) and immersive virtual environments is shaping the future of society. This report explores the impact of the metaverse on the job market, highlighting emerging professions and how they connect to the concept of smart cities."
 

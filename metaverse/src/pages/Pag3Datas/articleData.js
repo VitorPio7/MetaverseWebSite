@@ -1,7 +1,7 @@
 export default [
     {
-        introText: "Challenges and limitations of the metaverse",
-        introImg: "imgFourPage/img.svg",
+        introText: "Obstacles and Constraints of MV",
+        introImg: "imgFourPage/img.png",
         bodyElement: "In the metaverse, technology is the backbone that gives life to this digital universe. Those are the main technological pillars linked to the metaverse:"
 
     },

@@ -1,7 +1,7 @@
 export default [
     {
         introText: "Blockchain and AI in the Metaverse",
-        introImg: "imgSixPage/img.svg",
+        introImg: "imgSixPage/img.png",
         bodyElement: "Blockchain is fundamental to the metaverse as it offers a decentralized and security for transactions and digital property. These are some key points:"
         , myList: [
             "Digital Property: Blockchain allows the creation and management of digital assets, such as NFTs (non-fungible tokens), which represent unique ownership of items virtual, such as digital art, virtual lands, and game items.",

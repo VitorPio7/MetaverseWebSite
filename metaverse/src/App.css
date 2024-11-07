@@ -145,6 +145,7 @@ footer p {
   display: flex;
   gap: 1rem;
   justify-content: center;
+  color: #f2f2f2;
 }
 
 .containerRedes {
@@ -201,9 +202,12 @@ footer p {
 .containerIntro a {
   text-decoration: none;
   letter-spacing: 3px;
+  padding: 5px;
 }
-.containerIntro h1 {
+.mytitleMagazine {
+  font-size: 40px;
   text-align: center;
+  font-weight: 600;
 }
 .containerElement {
   display: flex;
@@ -246,4 +250,53 @@ ul li {
 }
 .myReferences li {
   list-style: none;
+}
+.imgCard {
+  max-width: 293px;
+}
+.newsImg {
+  width: 855px;
+}
+.myListRef li {
+  font-size: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .newsImg {
+    max-width: 500px;
+  }
+  .containerElement h3 {
+    max-width: 500px;
+  }
+  .containerElement p {
+    max-width: 500px;
+  }
+  .containerElement p {
+    max-width: 500px;
+    text-align: justify;
+    font-weight: 300;
+    line-height: 2em;
+  }
+  .containerElement ul {
+    max-width: 500px;
+    text-align: justify;
+    font-weight: 300;
+  }
+  .allMyReferences {
+    max-width: 280px;
+    padding: 0%;
+    margin-right: 100px;
+  }
+  .return {
+    font-size: small;
+  }
+  header {
+    width: 100vw;
+  }
+  .mytitleMagazine {
+    font-size: 30px;
+    padding: 10px;
+  }
+  .myListRef li {
+    font-size: 10px;
+  }
 }

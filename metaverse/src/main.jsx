@@ -6,6 +6,7 @@ import Pag2 from "./pages/Pag2";
 import Pag3 from "./pages/Pag3";
 import Pag4 from "./pages/Pag4";
 import Pag5 from "./pages/Pag5";
+import TeamPage from "./pages/TeamPage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./Error-page";
 
@@ -38,6 +39,11 @@ const router = createBrowserRouter([
   {
     path: "/metaverseMain",
     element: <Pag5 />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/about",
+    element: <TeamPage />,
     errorElement: <ErrorPage />,
   },
 ]);

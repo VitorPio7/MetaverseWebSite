@@ -14,7 +14,9 @@ export default function Footer() {
       <div className="containerFooter">
         <p>Privacy policy</p>
         <p>Security</p>
-        <p>About us</p>
+        <a href="/about">
+          <p>About us</p>
+        </a>
         <p>Manage cookies</p>
       </div>
     </footer>

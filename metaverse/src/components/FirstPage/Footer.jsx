@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 export default function Footer() {
   let data = new Date().getFullYear();
   return (
@@ -14,9 +15,9 @@ export default function Footer() {
       <div className="containerFooter">
         <p>Privacy policy</p>
         <p>Security</p>
-        <a href="/about">
+        <NavLink to="/about">
           <p>About us</p>
-        </a>
+        </NavLink>
         <p>Manage cookies</p>
       </div>
     </footer>

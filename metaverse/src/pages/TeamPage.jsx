@@ -1,30 +1,30 @@
 import Footer from "../components/FirstPage/Footer";
 import Head from "../components/FirstPage/Head";
 import teamData from "./TeamMenbersData/teamData";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import CardIntrodution from "../components/CardIntrodution/CardIntrodution";
 import HeadTeam from "../components/TeamPage/HeadTeam";
 export default function TeamPage() {
   let [firstIcon, setIcon] = useState(true);
-  let [data, setData] = useState();
+  // let [data, setData] = useState();
   function changeValue() {
     setIcon((prevValue) => !prevValue);
   }
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(
-          "https://rickandmortyapi.com/api/character"
-        );
-        const result = await response.json();
-        setData(result.results);
-      } catch (error) {
-        console.log("Error fetching data:", error);
-      }
-    };
-    fetchData();
-  }, []);
-  console.log(teamData);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await fetch(
+  //         "https://rickandmortyapi.com/api/character"
+  //       );
+  //       const result = await response.json();
+  //       setData(result.results);
+  //     } catch (error) {
+  //       console.log("Error fetching data:", error);
+  //     }
+  //   };
+  //   fetchData();
+  // }, []);
+  // console.log(teamData);
 
   return (
     <>
@@ -44,8 +44,6 @@ export default function TeamPage() {
                 key={index}
                 name={el.name}
                 img={"esesese"}
-                mydata={data?.[Math.ceil(Math.random() * data?.length)]}
-                course={el.course}
                 symbol={"openInAnew.svg"}
                 ra={el.ra}
               />

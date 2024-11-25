@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "axios": "^1.7.7",
+    "express": "^4.21.1",
     "localforage": "^1.10.0",
     "match-sorter": "^7.0.0",
     "metaverse": "file:",

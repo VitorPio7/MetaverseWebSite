@@ -128,8 +128,13 @@ header {
 }
 .Intro {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 5px;
+}
+.Intro h3 {
+  max-width: 1000px;
+  text-align: center;
+  font-weight: 300;
 }
 .anotherReturn {
   display: flex;
@@ -373,25 +378,31 @@ ul li {
     font-size: 30px;
   }
   .imgCard {
-    max-width: 150px;
+    max-width: 130px;
   }
   .contentDiv h1 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .myMainText {
     font-size: 0.7rem;
   }
+
   .myInfo {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .referenceLink {
     font-size: 0.8rem;
   }
+  .containerCard {
+    gap: 7px;
+    padding: 5px;
+  }
+
   .containerCard p {
-    max-width: 300px;
+    max-width: 250px;
   }
   .newsImg {
-    max-width: 400px;
+    max-width: 380px;
   }
   .mytitleMagazine {
     font-size: 20px;
@@ -400,15 +411,16 @@ ul li {
     font-size: 0.8rem;
   }
   .containerElement p {
-    max-width: 400px;
+    max-width: 370px;
   }
   .containerElement li {
-    max-width: 400px;
+    max-width: 350px;
     font-size: 0.8rem;
   }
   .containerElement h3 {
-    max-width: 400px;
+    max-width: 350px;
   }
+
   .myreturn {
     display: flex;
   }

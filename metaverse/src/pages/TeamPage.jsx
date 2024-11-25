@@ -39,15 +39,17 @@ export default function TeamPage() {
       <div className={firstIcon ? "lightMode2" : "darkMode2"} id="myTeam">
         {teamData.map((el, index) => {
           return (
-            <CardIntrodution
-              key={index}
-              name={el.name}
-              img={"esesese"}
-              mydata={data?.[Math.ceil(Math.random() * data?.length)]}
-              course={el.course}
-              symbol={"openInAnew.svg"}
-              ra={el.ra}
-            />
+            <>
+              <CardIntrodution
+                key={index}
+                name={el.name}
+                img={"esesese"}
+                mydata={data?.[Math.ceil(Math.random() * data?.length)]}
+                course={el.course}
+                symbol={"openInAnew.svg"}
+                ra={el.ra}
+              />
+            </>
           );
         })}
       </div>

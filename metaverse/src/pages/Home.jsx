@@ -1,28 +1,23 @@
 import "../App.css";
 import Head from "../components/FirstPage/Head";
-import { useState, useEffect } from "react";
 import Main from "../components/FirstPage/Main";
 import Footer from "../components/FirstPage/Footer";
 import myData from "../myData";
+import { useChangeIcon } from "../hooks/useChangeIcon";
+import { useConsumeData } from "../hooks/useConsumeData";
 
 function App() {
-  let [firstIcon, setIcon] = useState(true);
-  let [todos, setTodos] = useState([]);
-  useEffect(() => {
-    setTodos(myData);
-  }, []);
-  function changeValue() {
-    setIcon((prevValue) => !prevValue);
-  }
-  console.log("todos head:" + todos);
+  let [value, changeValue] = useChangeIcon(true);
+  let data = useConsumeData(myData);
+
   return (
     <div className="container">
       <Head
-        image={firstIcon ? "sun.svg" : "moon.svg"}
+        image={value ? "sun.svg" : "moon.svg"}
         event={changeValue}
-        backgroundChange={firstIcon}
+        backgroundChange={value}
       />
-      <Main myStily={firstIcon} myData={todos} />
+      <Main myStily={value} myData={data} />
       <Footer />
     </div>
   );

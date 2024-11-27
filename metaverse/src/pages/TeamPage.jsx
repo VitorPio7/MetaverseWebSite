@@ -1,43 +1,29 @@
 import Footer from "../components/FirstPage/Footer";
 import Head from "../components/FirstPage/Head";
 import teamData from "./TeamMenbersData/teamData";
-import { useState, useEffect } from "react";
+import { useConsumeData } from "../hooks/useConsumeData";
+import { useChangeIcon } from "../hooks/useChangeIcon";
+import { useConsumeDataApi } from "../hooks/useConsumeDataApi";
 import CardIntrodution from "../components/CardIntrodution/CardIntrodution";
 import HeadTeam from "../components/TeamPage/HeadTeam";
+
 export default function TeamPage() {
-  let [firstIcon, setIcon] = useState(true);
-  let [data, setData] = useState();
-  function changeValue() {
-    setIcon((prevValue) => !prevValue);
-  }
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(
-          "https://rickandmortyapi.com/api/character"
-        );
-        const result = await response.json();
-        setData(result.results);
-      } catch (error) {
-        console.log("Error fetching data:", error);
-      }
-    };
-    fetchData();
-  }, []);
-  console.log(data);
+  let data = useConsumeDataApi("https://rickandmortyapi.com/api/character");
+  let data2 = useConsumeData(teamData);
+  let [value, changeValue] = useChangeIcon(true);
 
   return (
     <>
       <Head
-        image={firstIcon ? "sun.svg" : "moon.svg"}
+        image={value ? "sun.svg" : "moon.svg"}
         event={changeValue}
-        backgroundChange={firstIcon}
+        backgroundChange={value}
       />
-      <div className={firstIcon ? "lightMode2" : "darkMode2"}>
+      <div className={value ? "lightMode2" : "darkMode2"}>
         <HeadTeam title={"Metaverse Team"} />
       </div>
-      <div className={firstIcon ? "lightMode2" : "darkMode2"} id="myTeam">
-        {teamData.map((el, index) => {
+      <div className={value ? "lightMode2" : "darkMode2"} id="myTeam">
+        {data2.map((el, index) => {
           return (
             <>
               <CardIntrodution

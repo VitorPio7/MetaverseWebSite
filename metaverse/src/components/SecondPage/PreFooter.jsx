@@ -3,8 +3,8 @@ export default function PreFooter({ myData }) {
     <div className="allMyReferences">
       <h3>References</h3>
       <ul className="myListRef">
-        {myData.map((el) => {
-          return <li>{el}</li>;
+        {myData.map((el, index) => {
+          return <li key={index}>{el}</li>;
         })}
       </ul>
     </div>

@@ -6,8 +6,8 @@ export default function MainNews(props) {
   return (
     <>
       <Intro
-        title={props.myArticleData[0].introText}
-        img={props.myArticleData[0].introImg}
+        title={props.myArticleData[0]?.introText}
+        img={props.myArticleData[0]?.introImg}
       />
       {props.myArticleData.map((el, index) => {
         return (

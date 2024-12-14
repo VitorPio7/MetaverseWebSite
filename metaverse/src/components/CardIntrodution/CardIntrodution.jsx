@@ -1,4 +1,7 @@
-export default function CardIntrodution(props) {
+import React from "react";
+
+function CardIntrodution(props) {
+  console.log("Renderizei card");
   return (
     <div className="worker">
       <img src={props.mydata?.image} className="arrowImg" alt="person image" />
@@ -10,3 +13,5 @@ export default function CardIntrodution(props) {
     </div>
   );
 }
+
+export default React.memo(CardIntrodution);

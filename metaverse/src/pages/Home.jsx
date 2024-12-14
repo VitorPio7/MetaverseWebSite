@@ -6,6 +6,7 @@ import { useOutletContext } from "react-router-dom";
 function Home() {
   let { value } = useOutletContext();
   let data = useConsumeData(myData);
+  console.log("Home renderizou");
 
   return (
     <div className="container">

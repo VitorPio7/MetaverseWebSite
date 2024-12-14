@@ -1,7 +1,6 @@
 import Card from "./Card";
 
 export default function Main({ myStily, myData }) {
-  console.log("todos main:" + myData);
   return (
     <div className={myStily ? "lightMode" : "darkMode"}>
       {myData.map((el, index) => {

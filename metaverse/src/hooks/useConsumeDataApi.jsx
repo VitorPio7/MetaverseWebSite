@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 export function useConsumeDataApi(link) {
   let [data, setData] = useState([]);
@@ -7,19 +7,16 @@ export function useConsumeDataApi(link) {
     const fetchData = async () => {
       try {
         const response = await fetch(link);
-        const result = await response.json();
-        if (!ignore) {
-          setData(result.results);
+        if (!response.ok) {
+          throw new Error("Error fetching data from API");
         }
+        const result = await response.json();
+        setData(result);
       } catch (error) {
-        console.err("Error fetching data:", error);
+        throw new Error("It's not working your request.", error);
       }
     };
-    let ignore = false;
     fetchData();
-    return () => {
-      ignore = true;
-    };
   }, []);
   return data;
 }

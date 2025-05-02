@@ -29,5 +29,7 @@ A responsive and visually appealing website that simulates a tech news platform 
 🧠 useState / useEffect
 
 🛠️ Always improving and iterating — stay tuned for more updates!
-  
+  ![metaverse1](https://github.com/user-attachments/assets/b4584f17-b4c1-4a32-9e2c-881c41af0b1d)
+  ![metaverse2](https://github.com/user-attachments/assets/ca175bf3-e6d2-498c-920e-08e3b0fd9086)
+
 🔗: https://stalwart-peony-980c9d.netlify.app/
